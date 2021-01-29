@@ -5,7 +5,7 @@ API project using Laravel/Lumen framework to provide REST API server
 
 1. Clone the project 
 
-2. Create database "rockar"
+2. Create database
 
 3. Create database user
 
@@ -29,6 +29,7 @@ API project using Laravel/Lumen framework to provide REST API server
   ```$ php -S localhost:5555 -t public```
 
 ### Testing the API:
+
 **/getCustomerRequest (POST)**
 
 	The following fields are mandatory to be sent on the request.
@@ -64,3 +65,6 @@ API project using Laravel/Lumen framework to provide REST API server
 1. On the project root directory, run: 
 ```$ vendor/bin/phpunit```
 Expected result: 5 tests, 7 assertions.
+
+## Testing with Postman
+Import the file 'API Postman Collection.postman_collection.json' into the Postman software and execute each request.
