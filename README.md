@@ -11,16 +11,19 @@ API project using Laravel/Lumen framework to provide REST API server
 
 4. Open the file .env and change the fields 
 
-  DB_DATABASE=CHANGE HERE
+  	DB_DATABASE=CHANGE HERE
   
-  DB_USERNAME=CHANGE HERE
+  	DB_USERNAME=CHANGE HERE
   
-  DB_PASSWORD=CHANGE HERE
+  	DB_PASSWORD=CHANGE HERE
   
   
-5. Go to the project directory and run the database migration with the command line: php artisan migrate
+5. Go to the project directory and run the database migration with the command line: 
+	```bash
+	$ php artisan migrate
+	```
 
-6. Import provided files (customer.csv, products.csv) to database.
+6. Import provided files (customer.csv, product.csv) to database.
 
 7. Inside the project directory enter the command line to start the server on port 5555
   ```$ php -S localhost:5555 -t public```
