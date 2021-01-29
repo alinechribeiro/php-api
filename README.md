@@ -1,4 +1,4 @@
-# php-api
+# PHP-API
 API project using Laravel/Lumen framework to provide REST API server
 
 ## Instructions
