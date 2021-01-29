@@ -29,9 +29,13 @@ API project using Laravel/Lumen framework to provide REST API server
 **/getCustomerRequest (POST)**
 
 	The following fields are mandatory to be sent on the request.
-		 *  identifier: string. > Column to be searched. Possible values: 'forename', 'surname', 'email', 'contact_number', 'postcode'.
+		 *  identifier: string. > Column to be searched. 
+		 	Possible values: 'forename', 'surname', 'email', 'contact_number', 'postcode'.
+		 
 		 *  identifierField: string. > Value to search for e.g.: 'Tom'.
-		 *  fields: array. > Which fields will be returned on the response. Possible values: ['forename', 'surname', 'email', 'contact_number', 'postcode'] or use ['*'] for all.
+		 
+		 *  fields: array. > Which fields will be returned on the response. 
+		 	Possible values: ['forename', 'surname', 'email', 'contact_number', 'postcode'] or use ['*'] for all.
 		 
 	Sample wget call: 
 	```
@@ -42,9 +46,13 @@ API project using Laravel/Lumen framework to provide REST API server
 **/getProductRequest  (POST)**
 
 	The following fields are mandatory to be sent on the request.
-		 *  identifier: string. > Column to be searched. Possible values: 'vin', 'make', 'model', 'colour', 'price'.
+		 *  identifier: string. > Column to be searched. 
+		 	Possible values: 'vin', 'make', 'model', 'colour', 'price'.
+			
 		 *  identifierField: string. > Value to search for e.g.: 'Ford'.
-		 *  fields: array. > Which fields will be returned on the response. Possible values: ['vin', 'make', 'model', 'colour', 'price'] or use ['*'] for all.
+		 
+		 *  fields: array. > Which fields will be returned on the response. 
+		 	Possible values: ['vin', 'make', 'model', 'colour', 'price'] or use ['*'] for all.
 		 
 	Sample wget call: 
 	```$ wget --no-check-certificate --quiet --method POST --timeout=0 --header 'Content-Type: application/json' --body-data '{"identifier": "vin", "identifierField": "ASDF123456", "fields": ["colour","make"]}' 'http://localhost:5555/getProductRequest/'```
