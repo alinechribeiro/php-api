@@ -30,7 +30,9 @@ API project using Laravel/Lumen framework to provide REST API server
 		 
 	Sample wget call: 
 	
-	```$ wget --no-check-certificate --quiet --method POST --timeout=0 --header 'Content-Type: application/json' --body-data '{"identifier": "forename", "identifierField": "Tom", "fields": ["surname","postcode"]}' 'http://localhost:5555/getCustomerRequest/'```
+	```
+	$ wget --no-check-certificate --quiet --method POST --timeout=0 --header 'Content-Type: application/json' --body-data '{"identifier": "forename", "identifierField": "Tom", "fields": ["surname","postcode"]}' 'http://localhost:5555/getCustomerRequest/'
+	```
 	
 	
 **/getProductRequest  (POST)**
